@@ -1,0 +1,282 @@
+html,
+body {
+  width: 100%;
+  height: 100%; 
+  font-family: 'Lato', serif;}
+
+header.wrap {
+  	position: relative;
+  	width: 100%;
+  	background:linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/1.jpg)  no-repeat center center fixed;
+	background-size: cover;}
+
+  @media (min-width: 992px) {
+    header.wrap {
+      height: 100vh;
+      min-height: 700px;
+      padding-top: 0;
+      padding-bottom: 0; }
+    }
+
+header .header-text{
+	margin-top: auto!important;
+}
+
+header .header-content{
+	color:white;
+}
+
+section{
+	min-height:700px;
+}
+
+nav, .nav-item a, .navbar-brand{
+	-webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.col-md-6, .col-lg-4{
+  padding:20px;
+}
+
+.navbar-brand{
+	font-size:1.5em;
+	color:white;
+}
+
+.btn-success{
+  background:#28a745!important;
+}
+
+.btn-primary{
+  background:#0275d8!important;
+}
+
+nav{
+  padding-left:50px!important;
+}
+
+nav a{
+  font-size:20px;
+	color:white;
+}
+
+nav a:hover{
+  color: #f97575 !important;
+}
+
+.not-at-top{
+	background:white;
+  border-bottom: 1px solid lightgrey;
+}
+
+.not-at-top .navbar-brand{
+	font-size:20px;
+	color:blue;
+}
+
+.not-at-top .nav-item a:hover{
+  color: #f97575;
+}
+
+.not-at-top .nav-item a{
+	color:black;
+}
+
+.not-at-top .nav-item .active{
+  color: #f97575;
+}
+
+.not-at-top .navbar-brand{
+  color:#f97575;
+}
+
+.not-at-top .navbar-brand:hover{
+  color:#ff3535 !important;
+}
+
+#about{
+  padding-top: 80px;
+  background:white;
+}
+
+/*Blocks Section*/
+.blocks{
+  background: #2c3e50;
+}
+
+/*team section*/
+#team{
+  background:#f97575;
+}
+
+/*Footer secion*/
+.copyright{
+  background: #2c3e50;
+}
+
+.code_title_label{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.code_language_label{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.code_description_label{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.code_body_label{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.block-title{
+  color:white;
+}
+
+#blocks .text-secondary{
+  color:white!important;
+}
+
+.profile{
+  height: 200px;
+  margin-top: 50px;
+}
+
+textarea{
+  background:black;
+  color:white;
+}
+
+#xu{
+  height:auto;
+  width:200px;
+  transform: rotate(90deg);
+  margin-top:80px;
+}
+
+.code_description{
+  width:100%;
+}
+
+
+/*Font-Awesome*/
+hr.star-light,
+hr.star-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+hr.star-light:after,
+hr.star-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: '\f005';
+  font-family: FontAwesome;
+  font-size: 2em; }
+
+hr.star-light{
+  color:white;
+}
+
+hr.star-light:after {
+  background-color: #2c3e50; }
+
+hr.star-dark:after {
+  background-color: white; }
+
+#team hr.star-dark:after {
+  background-color: #f97575; }
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+    color: black;
+}
+
+.popupContainer{
+  position:absolute;
+  width:330px;
+  height: auto;
+  left:45%;
+  top:80px;
+  background: #FFF;
+  color: black;
+}
+
+#modal_trigger {width:180px;}
+
+.btn {padding:10px 20px; background: #F4F4F2;}
+.btn_red {background: #28BB9C; color: #FFF;}
+
+.btn:hover {background: #E4E4E2;}
+.btn_red:hover {background: #145D4E;}
+
+a.btn { text-align: center; text-decoration: none; margin-left: 3%; margin-right: 3%; margin-top: 3%; margin-bottom: 3%}
+a.btn_red {color: #FFF;}
+
+.one_half {width:50%; display: block; float:left;}
+.one_half.last {width:45%; margin-left:5%;}
+
+/* Popup Styles*/
+.popupHeader {font-size:16px; text-transform: uppercase;}
+.popupHeader {background:#F4F4F2; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; right: 0; top:0; padding:10px 15px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:16px;}
+
+.popupBody {padding:20px;}
+
+
+/* Social Login Form */
+.social_login {}
+.social_login .social_box {display:block; clear:both; padding:10px; margin-bottom: 10px; background: #F4F4F2; overflow: hidden;}
+.social_login .icon {display:block; width:10px; padding:5px 20px; margin-right: 20px; float:left; color:#FFF; font-size:16px; text-align: center;}
+.social_login .fb .icon {background:#3B5998;}
+.social_login .google .icon {background:#DD4B39;}
+.social_login .icon_title {display:block; padding:5px 0; float:left; font-weight: bold; font-size: 16px; color:#777;}
+.social_login .social_box:hover {background: #E4E4E2;}
+
+.centeredText {text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;}
+
+.action_btns {clear:both; overflow: hidden;}
+.action_btns a {display: block;}
+
+/* User Register Form */
+.user_register {display: none;}
+.user_register label {display: block; margin-bottom:5px;}
+.user_register input[type="text"], .user_register input[type="email"], .user_register input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_register input[type="password2"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_register input[type="checkbox"] {float:left; margin-right:5px;}
+.user_register input[type="checkbox"]+label {float:left;}
+
+.user_register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+
+section {
+  padding: 6rem 0; }
+  section h2 {
+    font-size: 2.25rem;
+    line-height: 2rem; }
+  @media (min-width: 992px) {
+    section h2 {
+      font-size: 3rem;
+      line-height: 2.5rem; } }
+}
+

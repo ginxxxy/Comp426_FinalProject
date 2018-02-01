@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Code Block</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar-example">
+      <a class="navbar-brand nav-scroll" href="#page-top">Blocks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" href="#about">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" href="#blocks">Blocks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" href="#team">Team</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a id="modal_trigger" href="#modal" class="nav-link float-right rounded js-scroll-trigger">Sign in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <header class="container-fluid wrap" id="header-section">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-7 my-auto">
+              <div class="header-content">
+                <h1>Save your favorite code blocks and reassemble</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- popup window -->
+
+    <div id="modal" class="popupContainer" style="display:none;">
+      <header class="popupHeader">
+        <span class="header_title">Sign in</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+      </header>
+
+      <div class="popupBody">
+        <!-- Login Form -->
+        <div class ="social_login">
+            <form id="login_form">
+                <label>Username</label>
+                  <br />
+                  <input type="text" id="username_signin"/>
+                  <br />
+                  <br />
+
+                  <label>Password</label>
+                  <br />
+                  <input type="password" id="password_signin"/>
+                  <br />
+                  <br />
+    
+                  <br />
+                  <div class="action_btns">
+                        <div class="one_half">
+                          <a href="#" id="register_button" class="btn">Sign up</a>
+                        </div>
+                        <div class="one_half last">
+                          <a href="#" id="signin" class="btn btn_red">Sign in</a>
+                        </div>
+                  </div>
+              </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+          <form>
+            <label>Username</label>
+            <input type="text" id="username_signup" />
+            <br />
+
+
+            <label>Password</label>
+            <input type="password" id="password_signup" />
+            <br />
+
+            <label>Email Address</label>
+            <input type="email" id="email_signup" />
+            <br />
+
+            <div class="action_btns">
+              <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+              <div class="one_half last">
+                <a id="signup" href="#" class="btn btn_red">Register</a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div> <!-- End of Pop up Body -->
+
+    </div><!-- End of Pop up -->
+
+    <!-- About Section -->
+    <section class="text-black mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase">About</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-6 ml-auto mr-auto text-center">
+            <br>
+            <br>
+            <h3>Blocks enables you to upload your favorite code snippet and save others</h3>
+            <br>
+            <br>
+            <h3>As development process becomes more modular, we believe that managing and resassembling small coding blocks can help you to develop efficiently.</h3>
+          </div>
+          <div class="col-lg-6 ml-auto mr-auto">
+            <img src="img/2.jpeg" class="img-fluid" style="height:auto;"">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Block Section -->
+    <section class="blocks" id="blocks">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Blocks</h2>
+        <hr class="star-light mb-5">
+
+        <div class="row" id="blocks_showcase_array">
+        </div>
+
+      </div>
+    </section>
+
+  <!-- Team section -->
+    <section id="team">
+      <div class="container">
+        <h2 class="text-center text-uppercase">Dream Team</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <h4>Haokun Chen</h4>
+            <h4>Email: chenhk@live.unc.edu</h4>
+            <img src="img/chen.jpg" class="profile" alt="Profile">
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+           <h4>Yang Xiao</h4>
+           <h4>Email: yangyan1@live.unc.edu</h4>
+           <img src="img/yang.jpg" class="profile"  alt="Profile">
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <h4>Jiyu Xu</h4>
+            <h4>Email: xujiyu@live.unc.edu</h4>
+            <img src="img/xu.jpg" class="profile" id="xu" alt="Profile">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; COMP 426-2017</small>
+      </div>
+    </footer>
+
+    <!-- Showcase blocks Modal -->
+    <div id="blocks_showcase_modal">
+    </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery/jquery.leanModal.min.js"></script>
+
+  <!-- Plug-in Javscript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="vendor/jquery/jquery.cookie.js"></script>
+
+
+  <script src="js/index.js"></script>
+  <script src="js/signup.js"></script>
+  <script src="js/signin.js"></script>
+  <script src="js/load_block.js"></script>
+  <script src="js/scroll.js"></script>
+
+  <!-- Sign in form Javscript -->
+<script type="text/javascript">
+    $("#modal_trigger").leanModal({top : 200,closeButton: ".modal_close" });
+    // $("#nav_register_button").leanModal({top : 200,closeButton: ".modal_close" });
+    $(function(){
+        // Calling Register Form
+        $("#register_button").click(function(){
+            $(".social_login").hide();
+            $(".user_register").show();
+            $(".header_title").text('Register');
+            return false;
+        });
+
+        //Going back to Login Forms
+        $(".back_btn").click(function(){
+            $(".user_register").hide();
+            $(".social_login").show();
+            $(".header_title").text('Login');
+            return false;
+        });
+
+    })
+</script>
+
+  </body>
+  
+</html>

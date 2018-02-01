@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block - Dashboard</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Code Block</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar fixed-top navbar-expand-lg" id="navbar-example">
+      <a class="navbar-brand nav-scroll" href="#page-top">Blocks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" href="#public-block">Public Blocks<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-scroll" href="#saved-block">Your Blocks</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+          <li id="username"></li>
+          <li class="nav-item">
+            <a id="signout" href="#" class="nav-link float-right rounded js-scroll-trigger">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Code Block Section -->
+    <section class="blocks" id="public-block">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Public Blocks</h2>
+        <hr class="star-light mb-5">
+
+        <button type="button" id="upload-button" class="btn btn-success" data-toggle="modal" data-target="#upload">
+          Upload Your Code Block
+        </button>
+
+       <!-- Modal -->
+        <div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upload Your Block</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="/action_page.php" method="get" id="form1">
+                  <label>Title:</label>
+                  <br>
+                  <input type="text" name="title" id="code_title" />
+                  <br>
+                  <label>Language:</label>
+                  <br>
+                  <input type="text" name="language" id="code_language"/>
+                  <br>
+                  <label placeholder="What this code block does?">Description:</label>
+                  <br>
+                  <input type="text" name="description" id="code_description" />
+                  <br>
+                  <label>Code Body:</label>
+                  <br>
+                  <textarea name="codebody" class="form-control" style="min-width: 100%" rows="10" placeholder="Put your Code Here!" id="code_body"></textarea>
+                  <br><br>
+                </form> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" id="upload-submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="blocks_array">
+        </div>
+
+      </div> 
+    </section>
+
+    <!-- Saved Block Section -->
+    <section class="blocks" id="saved-block">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Your Blocks</h2>
+        <hr class="star-light mb-5">
+        <div class="row" id="saved-blocks-array">
+        </div>
+      </div>
+    </section>
+
+    <!-- Block Pop up Modal -->
+    <div id="public-block-popup">  
+    </div>
+
+    <!-- Saved Block Pop up Modal -->
+    <div id="saved-block-popup">  
+    </div>
+
+   <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plug-in Javscript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery/jquery.cookie.js"></script>
+
+  <!-- User define js -->
+  <script src="js/dashboard.js"></script>
+  <script src="js/signout.js"></script>
+  <script src="js/upload.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/load_block.js"></script>
+  <script src="js/scroll.js"></script>
+
+
+</body>
+</html>
